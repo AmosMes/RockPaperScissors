@@ -29,17 +29,15 @@ game_images = [rock, paper, scissors]
 user_choice = int(input("What do you choose? Type 0 for rock,1 for paper or 2 for scissors "))
 print(type(user_choice))
 if user_choice == 0:
-  print(rock)
+  print(f"You chose, \n {rock}")
 elif user_choice == 1:
-  print(paper)
+  print(f"You chose, \n {paper}")
 else:
-  print(scissors)
+  print(f"You chose, \n {scissors}")
 
-# Creating a variable for a computers random choice from the list game_images.
 pc_choice = random.choice(game_images)
 print(f"Computer chose, {pc_choice}")
 
-# Creating all possible scenarios in the game.
 if pc_choice == rock and user_choice == 0:
     print('It\'s a draw')
 if pc_choice == paper and user_choice == 1:
